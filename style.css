@@ -1,0 +1,218 @@
+/*--- 01 Typography System:
+
+html : {
+font-size : 62.5%;
+}
+
+FONT SIZE : 
+- Normal Text : / 10 / 12 / 14 / 16 / 18 /
+- Sub-Titles :  / 20 / 24 / 30 / 36 /
+- Titles : / 44 / 52 / 62 / 74 / 86 / 98 /
+
+ Font weights
+- Default : 400
+- Medium : 500
+- Semi-bold : 600
+- Bold : 700
+
+  Line heights : 
+- Default : 1 
+- Small : 1.05
+- Medium : 1.2
+- Large : 1.8
+
+- Paragraph default : 1.6   
+- For small text, use line height of 1.5≥
+- For titles or sub-titles, use line height of 1.5≤
+
+Letter Spacing :
+- 0.5px
+- 0.75px
+
+
+--- 02 Colors
+
+- Brand color (Primary): 
+- Tint : 
+- Shades :
+- Accent : 
+- Greys : 
+
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+
+Default : 9px
+
+
+--- 07 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+FONT-NAME : 
+font-family: 'Montserrat', sans-serif;*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #f5f5f5;
+}
+
+*:focus {
+  outline: red;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+  place-content: center;
+  background: #e9ecef;
+}
+
+.container {
+  background-color: #339af0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 2.4rem;
+  border-radius: 8px;
+}
+
+.list--title {
+  font-weight: 700;
+  text-align: center;
+  color: #339af0;
+  background-color: #f5f5f5;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+.list--input {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  justify-content: space-between;
+}
+
+.list-add-text {
+  width: 100%;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+.list-add-btn {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #339af0;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+}
+
+.list-add-btn:hover {
+  background-color: #ced4da;
+}
+
+.list--container {
+  margin-block: 2.4rem;
+}
+
+.list-item {
+  background-color: #74c0fc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  list-style: none;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+.list-item-text {
+  line-height: 1.5;
+  width: auto;
+}
+
+.list-item-action {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.list-edit-text {
+  border: none;
+  border-radius: 2px;
+  padding: 0.6rem;
+  width: 80%;
+}
+
+.list-item-action i {
+  font-size: 1.8rem;
+  background-color: #1864ab;
+  border-radius: 100px;
+  padding: 0.5rem;
+}
+
+.list-item-action i:hover {
+  color: #ced4da;
+  cursor: pointer;
+}
+
+.list-item-text.clear {
+  text-decoration: line-through;
+  text-decoration-color: #1c1c1c;
+  text-decoration-thickness: 2.2px;
+}
+
+.list-item-button {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-item-button:hover {
+  background-color: #ced4da;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  color: #339af0;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: #339af0;
+  font-weight: bold;
+  filter: opacity(0.5);
+}
